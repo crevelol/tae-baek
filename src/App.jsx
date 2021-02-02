@@ -1,16 +1,24 @@
 import './App.css';
+
 import React from 'react'
-import Header from './componentes/Header'
-import Body from './componentes/Body'
-import Footer from './componentes/Footer'
+
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+import Inscribete from './componentes/Inscribete';
+import Principal from './componentes/Principal';
+import About from './componentes/About';
+import Dietas from './componentes/Dietas';
 
 function App() {
   return (
-    <React.Fragment>
-      <Header/>
-      <Body/>
-      <Footer/>
-    </React.Fragment>
+    <Router>
+      <Switch>
+        <Route path="/dietas" component={Dietas}/>
+        <Route path="/inscribete" component={Inscribete}/>
+        <Route exact path="/" component={Principal}/>
+        <Route path="/about" component={About}/>
+      </Switch>
+    </Router>
   );
 }
 
