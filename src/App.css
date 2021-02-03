@@ -12,7 +12,7 @@
     background-color: rgb(26, 26, 26);
     background-blend-mode: soft-light;
     background-position: center;
-    height: 25rem;
+    height: 23rem;
     padding: 0.5rem;
     font-family: "Angeline_Vintage";
     color: white;
@@ -36,7 +36,7 @@
     float: left;
     height: 9rem;
     width: 9rem;
-    margin: -1rem 0%;
+    margin: -1rem 3%;
 }
 
 .Menu {
@@ -45,6 +45,30 @@
     width: 3rem;
     margin: 2.2% 1.5%;
     filter: invert(100%);
+}
+
+.menu_s {
+    margin-top: 3%;
+}
+
+.menu_s ul {
+    display: flex;
+}
+
+.menu_s ul li {
+    display: flex;
+    text-decoration: none;
+    margin: 0px 2.7rem;
+}
+
+.menu_s ul li a {
+    color: rgb(185, 185, 185);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.menu_s ul li a:hover {
+    color: rgb(255, 255, 255);
 }
 
 .App-menu {
@@ -122,9 +146,54 @@
     border-radius: 5px;
 }
 
+.body_titulo {
+    text-align: center;
+}
+
+.texto {
+    margin: 1rem 5rem;
+}
+
+
+/* FORMULARIO */
+
 
 /* FOOTER */
 
 .Footer {
     background-color: black;
+}
+
+.App_form {
+    display: block;
+    background-color: darkgoldenrod;
+    text-align: center;
+    margin: 3%;
+}
+
+.App_form label {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.App_form b {
+    color: red;
+    font-size: 0.8rem;
+}
+
+.usu {
+    text-align: center;
+}
+
+.tablas {
+    margin: auto;
+}
+
+.tablas tbody tr td {
+    padding: 2rem;
+}
+
+.dietas {
+    margin: auto;
+    text-align: centers;
 }

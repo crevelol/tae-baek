@@ -58,14 +58,14 @@ class Inscribete extends React.Component {
             return (
                 <React.Fragment>
                     <form onSubmit={this.handleSubmit} >
-                        <input type="text" value={this.state.nombres} onChange={this.nomHandleChange}/>
-                        <input type="text" value={this.state.apellidos} onChange={this.apeHandleChange}/>
-                        <input type="text" value={this.state.telefono} onChange={this.telHandleChange}/>
-                        <input type="text" value={this.state.email} onChange={this.emaHandleChange}/>
-                        <input type="text" value={this.state.password} onChange={this.passHandleChange}/>
-                        <input type="text" value={this.state.sexo} onChange={this.sexHandleChange}/>
-                        <input type="text" value={this.state.direccion} onChange={this.dirHandleChange}/>
-                        <input type="text" value={this.state.nacimiento} onChange={this.nacHandleChange}/>
+                        <label>Nombres</label><input type="text" value={this.state.nombres} onChange={this.nomHandleChange}/>
+                        <label>Apellidos</label><input type="text" value={this.state.apellidos} onChange={this.apeHandleChange}/>
+                        <label>Telefono</label><input type="text" value={this.state.telefono} onChange={this.telHandleChange}/>
+                        <label>Email</label><input type="text" value={this.state.email} onChange={this.emaHandleChange}/>
+                        <label>Password</label><input type="text" value={this.state.password} onChange={this.passHandleChange}/>
+                        <label>Sexo</label><input type="text" value={this.state.sexo} onChange={this.sexHandleChange}/>
+                        <label>Direccion</label><input type="text" value={this.state.direccion} onChange={this.dirHandleChange}/>
+                        <label>Nacimiento</label><input type="text" value={this.state.nacimiento} onChange={this.nacHandleChange}/>
 
                         <button type="submit">Registrar</button>
                     </form>

@@ -53,16 +53,25 @@ class Dietas extends React.Component {
         if(this.state.show){
             return (
                 <React.Fragment>
-                    <form onSubmit={this.handleSubmit} >
-                        <input type="text" value={this.state.grams} onChange={this.gramsHandleChange}/>
+                    <form onSubmit={this.handleSubmit} className="App_form">
+                        <label>Gramos :</label>
+                        <br/><input type="text" value={this.state.grams} onChange={this.gramsHandleChange}/>
+                        <br/><label>Calorias :</label><br/>
                         <input type="text" value={this.state.calories} onChange={this.calHandleChange}/>
+                        <br/><label>Proteinas :</label><br/>
                         <input type="text" value={this.state.protein} onChange={this.protHandleChange}/>
+                        <br/><label>Grasas :</label><br/>
                         <input type="text" value={this.state.fat} onChange={this.grasHandleChange}/>
+                        <br/><label>Grasas Saturadas :</label><br/>
                         <input type="text" value={this.state.fat_sat} onChange={this.grasSatHandleChange}/>
+                        <br/><label>Fibra :</label><br/>
                         <input type="text" value={this.state.fiber} onChange={this.fibHandleChange}/>
-                        <input type="text" value={this.state.carbs} onChange={this.carbHandleChange}/> 
-
+                        <br/><label>Carbohidratos :</label><br/><input type="text" value={this.state.carbs} onChange={this.carbHandleChange}/> 
+                        <br/>
+                        <br/>
                         <button type="submit">Buscar</button>
+                        <br/>
+                        <br/>
                     </form>
                 </React.Fragment>
             )

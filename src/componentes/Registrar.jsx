@@ -3,6 +3,10 @@ import axios from 'axios';
 
 class Registrar extends React.Component {
 
+    state = {
+        regis: ''
+    }
+
     consulta = async() => {
         const query = JSON.stringify({
             "nombre": this.props.nombres,
@@ -15,14 +19,17 @@ class Registrar extends React.Component {
             "sexo": this.props.sexo
         });
 
-        await axios.post(`https://rest-clustering.herokuapp.com/`, query,{headers:{"Content-Type":"application/json"}})
+        await axios.post(`https://rest-nodejs-mongodb.herokuapp.com/usuario`, query ,{ headers:{"Content-Type":"application/json"}})
             .then(res => {
-                const clust = res.data;
+                const usuario = res.data;
 
-                var d = Object.values(clust);
-                console.log(d);
-                this.setState({ clust: d[0] })
+                var d = Object.values(usuario);
+                this.setState({ regis: d[1] })
         })
+    }
+
+    componentDidMount() {
+        this.consulta();
     }
 
     render() {

@@ -1,8 +1,0 @@
-<nav className="App-menu">
-                    <a href="hola.html">Inicio</a>
-                    <a href="hola.html">Servicios</a>
-                    <a href="hola.html">Proyectos</a>
-                    <a href="hola.html">Contacto</a>
-                  </nav>
-
-                      <img src={logo} className="Logo" alt="logo" />

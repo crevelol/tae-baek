@@ -50,7 +50,7 @@ class Resultado extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="dietas">
                 <h1>{this.state.predi}</h1>
             </div>
         )
